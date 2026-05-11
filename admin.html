@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuova VITA | Panel de Administración</title>
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            Nuova VITA <span style="font-size: 0.8rem; margin-left: 0.5rem; color: #A3968F; font-weight: normal;">Admin</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-item active" data-target="dashboard">Dashboard</a>
+            <a href="#" class="nav-item" data-target="products">Gestión de Productos</a>
+            <a href="#" class="nav-item" data-target="orders">Ventas y Pedidos</a>
+            <a href="#" class="nav-item" data-target="customers">Clientes</a>
+            <a href="#" class="nav-item" data-target="inventory">Inventario</a>
+            <a href="#" class="nav-item" data-target="reports">Reportes</a>
+            <a href="#" class="nav-item" data-target="settings">Configuración</a>
+        </nav>
+        <div style="padding: 1.5rem; margin-top: auto; border-top: 1px solid rgba(255,255,255,0.05);">
+            <a href="index.html" style="color: #A3968F; text-decoration: none; font-size: 0.9rem;">&larr; Volver a la tienda</a>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- HEADER -->
+        <header class="header">
+            <div>
+                <input type="text" placeholder="Buscar..." style="padding: 0.5rem 1rem; border: 1px solid var(--color-border); border-radius: 4px; width: 300px; outline: none;">
+            </div>
+            <div class="user-profile">
+                <span>María Paulina</span>
+                <div class="avatar">MP</div>
+            </div>
+        </header>
+
+        <!-- CONTENT AREA -->
+        <div class="content-area">
+
+            <!-- DASHBOARD SECTION -->
+            <section id="dashboard" class="admin-section active">
+                <h1 class="page-title">Dashboard General</h1>
+                
+                <div class="grid-cards">
+                    <div class="stat-card">
+                        <h3>Ventas Mensuales</h3>
+                        <div class="value">$14,500.00</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pedidos Nuevos</h3>
+                        <div class="value">124</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Productos Activos</h3>
+                        <div class="value">16</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Nuevos Clientes</h3>
+                        <div class="value">48</div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="table-title">Últimos Pedidos</div>
+                        <button class="btn btn-outline">Ver todos</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pedido ID</th>
+                                <th>Cliente</th>
+                                <th>Fecha</th>
+                                <th>Total</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-0921</td>
+                                <td>Juan Pérez</td>
+                                <td>08 May 2026</td>
+                                <td>$45.00</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-0920</td>
+                                <td>Ana Gómez</td>
+                                <td>07 May 2026</td>
+                                <td>$82.50</td>
+                                <td><span class="status delivered">Entregado</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-0919</td>
+                                <td>Carlos Ruiz</td>
+                                <td>07 May 2026</td>
+                                <td>$30.00</td>
+                                <td><span class="status active">En Camino</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- PRODUCTS SECTION -->
+            <section id="products" class="admin-section">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h1 class="page-title" style="margin: 0;">Catálogo de Productos</h1>
+                    <button class="btn btn-primary">+ Nuevo Producto</button>
+                </div>
+                
+                <div class="table-container">
+                    <table id="admin-products-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Categoría</th>
+                                <th>Stock</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Generado por JS admin.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- OTHERS SECTIONS (Placeholder) -->
+            <section id="orders" class="admin-section">
+                <h1 class="page-title">Gestión de Pedidos</h1>
+                <p>Módulo de pedidos en desarrollo.</p>
+            </section>
+            
+            <section id="customers" class="admin-section">
+                <h1 class="page-title">Clientes</h1>
+                <p>Módulo de clientes en desarrollo.</p>
+            </section>
+
+            <section id="inventory" class="admin-section">
+                <h1 class="page-title">Inventario General</h1>
+                <p>Control de existencias y materias primas en desarrollo.</p>
+            </section>
+
+            <section id="reports" class="admin-section">
+                <h1 class="page-title">Reportes y Estadísticas</h1>
+                <p>Módulo analítico en desarrollo.</p>
+            </section>
+
+            <section id="settings" class="admin-section">
+                <h1 class="page-title">Configuración del Sistema</h1>
+                <p>Ajustes de tienda y administración.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="./js/products.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+</html>
