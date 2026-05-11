@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Nuova VITA</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo"><img src="assets/images/Logo nova vita.png" alt=""style="width:50px"> </div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="catalog.html">Catálogo</a>
+                <a href="about.html">Nuestra Empresa</a>
+                <a href="index.html#contacto">Contacto</a>
+                <a href="admin.html" style="color: var(--color-primary);">Admin Panel</a>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon" id="cart-toggle">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PRODUCTOS -->
+    <section class="products-section" id="productos" style="padding-top: 4rem;">
+        <div class="container">
+            <h2 class="section-title">Nuestro Catálogo Completo</h2>
+            <p class="section-subtitle">Explora toda nuestra variedad de cremas de frutos secos 100% naturales. Sin aditivos, puras y deliciosas.</p>
+            
+            <!-- Filtros Dinámicos -->
+            <div class="filters" id="filters-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="Línea Clásica">Clásica</button>
+                <button class="filter-btn" data-filter="Línea Premium">Premium</button>
+                <button class="filter-btn" data-filter="Línea Arequipe">Arequipe</button>
+                <button class="filter-btn" data-filter="Línea Chocolate">Chocolate</button>
+                <button class="filter-btn" data-filter="Línea Café">Café</button>
+            </div>
+
+            <!-- Grid de Productos -->
+            <div class="products-grid" id="products-grid">
+                <!-- Generado por JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SIDEBAR CARRITO -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p style="color: var(--color-text-muted); text-align: center; margin-top: 2rem;">Tu carrito está vacío.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-mock">
+                <span>Subtotal:</span>
+                <span>Por definir</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;">Proceder al Pago</button>
+        </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer id="contacto" style="margin-top: 4rem;">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Nuova VITA</h3>
+                <p>Elaborando cremas de frutos secos 100% naturales para nutrir tu cuerpo y alma.</p>
+                <p style="margin-top: 1rem; color: #FFF;">Registro Sanitario No. RSA - 0018794-2022</p>
+            </div>
+            <div class="footer-links">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:nuovavita.co@gmail.com">nuovavita.co@gmail.com</a></li>
+                    <li><a href="tel:+573162485871">WhatsApp: 316 248 5871</a></li>
+                    <li><a href="#">Instagram: @nuovavita_co</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nuova VITA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/products.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

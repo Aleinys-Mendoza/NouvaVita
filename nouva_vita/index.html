@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuova VITA | Cremas de Frutos Secos Naturales</title>
+    <meta name="description"
+        content="Cremas de frutos secos 100% naturales, elaboradas con ingredientes reales y sin aditivos. Descubre la experiencia Nuova VITA.">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo"><img src="assets/images/Logo nova vita.png" alt=""style="width:50px"> </div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="catalog.html">Catálogo</a>
+                <a href="about.html">Nuestra Empresa</a>
+                <a href="index.html#contacto">Contacto</a>
+                <a href="admin.html" style="color: var(--color-primary);">Admin Panel</a>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon" id="cart-toggle">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="hero" id="inicio">
+        <div class="container">
+
+        <div class="hero-text">
+            <h1>Elige el equilibrio y la conexión con lo natural</h1>
+            <p>Productos honestos, naturales y nutritivos que inspiran a las familias a cuidarse a través de una
+                alimentación llena de intención. 100% frutos secos, 0% aditivos.</p>
+            <a href="catalog.html" class="btn btn-primary">Descubrir Productos</a>
+        </div>
+              
+
+            <div class="hero-image">
+                        <img src="./assets/images/hero.jpg" alt="Nuova VITA">
+            </div>
+
+        </div>
+        
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="products-section" id="productos">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <p class="section-subtitle">Un vistazo a nuestras cremas más queridas, diseñadas para deleitar tu paladar.
+            </p>
+
+            <!-- Grid de Productos -->
+            <div class="products-grid" id="featured-products-grid">
+                <!-- Generado por JS -->
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="catalog.html" class="btn btn-primary">Ver Catálogo Completo</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MODAL PRODUCTO -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="product-modal">
+            <button class="close-modal" id="close-modal">
+                ✕
+            </button>
+            <div class="modal-image">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="modal-info">
+                <span class="product-category" id="modal-category"></span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <div class="badges-wrap" id="modal-badges"></div>
+                <div class="product-action-box">
+
+                    <h3 style="margin-bottom:1rem;">
+                        Opciones de compra
+                    </h3>
+                    <p style="margin-bottom:1rem; color:var(--color-text-muted);">
+                        Presentación: Frasco de vidrio 240g
+                    </p>
+                    <button class="btn btn-primary" style="width:100%;">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOBRE NOSOTROS (Preview) -->
+    <section class="about-section" id="nosotros">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    alt="Ingredientes naturales Nuova VITA">
+            </div>
+            <div class="about-content">
+                <h2>Nuestra Historia</h2>
+                <p>Nuova VITA nació en 2019 de la mano de María Paulina Otero, como resultado de un camino personal
+                    hacia una vida más saludable y consciente. Lo que comenzó como una búsqueda de bienestar se
+                    transformó en un propósito: crear productos naturales, nutritivos y honestos.</p>
+                <p>Más que una marca, Nuova VITA es una forma de vivir. Es elegir la sencillez, el equilibrio y la
+                    conexión con la naturaleza.</p>
+                <a href="about.html" class="btn btn-outline" style="margin-top: 1rem;">Conoce más de nosotros</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact-section" id="contacto">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>¿Tienes alguna duda o quieres ser distribuidor?</h2>
+                <p>Escríbenos y nuestro equipo se pondrá en contacto contigo lo antes posible para brindarte toda la
+                    información que necesitas.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>WhatsApp:</strong> <a href="tel:+573162485871">316 248 5871</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong> <a href="mailto:nuovavita.co@gmail.com">nuovavita.co@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Instagram:</strong> <a href="#">@nuovavita_co</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="juan@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIDEBAR CARRITO -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p style="color: var(--color-text-muted); text-align: center; margin-top: 2rem;">Tu carrito está vacío.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-mock">
+                <span>Subtotal (Estimado):</span>
+                <span>Por definir</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;">Proceder al Pago (Próximamente)</button>
+        </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Nuova VITA</h3>
+                <p>Elaborando cremas de frutos secos 100% naturales para nutrir tu cuerpo y alma.</p>
+                <p style="margin-top: 1rem; color: #FFF;">Registro Sanitario No. RSA - 0018794-2022</p>
+            </div>
+            <div class="footer-links">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:nuovavita.co@gmail.com">nuovavita.co@gmail.com</a></li>
+                    <li><a href="tel:+573162485871">WhatsApp: 316 248 5871</a></li>
+                    <li><a href="#">Instagram: @nuovavita_co</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Políticas de Venta</a></li>
+                    <li><a href="#">Conviértete en Distribuidor</a></li>
+                    <li><a href="#">Línea Institucional</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nuova VITA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/products.js"></script>
+    <script src="./js/app.js"></script>
+</body>
